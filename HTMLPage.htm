@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript" language="javascript">
+    function logout()
+    {
+//    try { 
+//        if (document.all) 
+//        { 
+//            document.execCommand("ClearAuthenticationCache"); 
+//           // window.location = "/";
+//           window.location = "Login page.aspx"; 
+//        } 
+//        else 
+//        { 
+//            window.location = "Login page.aspx"; 
+//        } 
+//    } 
+//    catch(e) 
+//    { 
+//        alert("It was not possible to clear your credentials from browser cache. Please, close your browser window to ensure that you are completely logout of system."); 
+//        self.close(); 
+//    } 
+//   
+window.history.forward(-1);
+window.open('Login page.aspx','_self');
+    }
+    </script>
+   
+</head>
+<body onload="logout()">
+
+</body>
+</html>

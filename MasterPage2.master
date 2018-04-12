@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1000px;
+        }
+        .style2
+        {
+            text-decoration: underline;
+        }
+        .style3
+        {
+            text-decoration: underline;
+        }
+        .style4
+        {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body bgcolor="#ffffcc">
+    <form id="form1" runat="server">
+    <div>
+         <table class="style1">
+             <tr>
+                 <td>
+                     
+                                          &nbsp&nbsp
+
+                                          <asp:Label ID="Label1" runat="server" Text="Work Experience" CssClass="style2"></asp:Label>
+                
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                          <asp:Label ID="Label2" runat="server" Text="Personal Refrence" 
+                                              CssClass="style3"></asp:Label>
+                
+                
+                
+               &nbsp&nbsp&nbsp; &nbsp&nbsp
+                                          <asp:Label ID="Label3" runat="server" Text="Login ID" CssClass="style4"></asp:Label>
+                 
+                         
+                     
+                    
+                     <br />
+                
+                     
+                    
+             </tr>
+             <tr bgcolor=olive height=100px>
+                 <td bgcolor="#FFFFCC">
+                     
+                     <asp:Image ID="Image1" runat="server" Height="100px" 
+                         Width="662px" BackColor="#999999" />
+                 </tr>
+             <tr>
+                 <td>
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                         <p>
+                             <br />
+                         </p>
+                     </asp:ContentPlaceHolder>
+                 </td>
+             </tr>
+         </table>
+         </div>
+    </form>
+</body>
+</html>
